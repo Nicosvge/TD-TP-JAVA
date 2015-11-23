@@ -10,4 +10,10 @@ public class ApplicationWarningMessageDialog extends
 		/** UTILISER l'AIDE FORUNIR DANS L'ENNONCE */
 	}
 
+	@Override
+	protected void showMessage() {
+		
+		
+	}
+
 }

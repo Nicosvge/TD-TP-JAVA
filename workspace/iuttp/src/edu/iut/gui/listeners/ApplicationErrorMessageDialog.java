@@ -10,4 +10,10 @@ public class ApplicationErrorMessageDialog extends
 		/** UTILISER l'AIDE FORUNIR DANS L'ENNONCE */
 	}
 
+	@Override
+	protected void showMessage() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
