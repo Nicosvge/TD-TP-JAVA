@@ -7,13 +7,7 @@ public class ApplicationErrorMessageDialog extends
 
 	@Override
 	protected void showMessage(String level, String message) {
-		/** UTILISER l'AIDE FORUNIR DANS L'ENNONCE */
-	}
-
-	@Override
-	protected void showMessage() {
-		// TODO Auto-generated method stub
-		
+		JOptionPane.showMessageDialog(null, message, level, JOptionPane.ERROR_MESSAGE, null);
 	}
 
 }

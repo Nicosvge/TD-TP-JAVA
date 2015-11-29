@@ -14,8 +14,7 @@ public abstract class AbstractApplicationLog implements IApplicationLog {
 	
 	@Override
 	public abstract void setMessage(String message);
-	
-	  /** TP1 : Fonction venant de l'interface par héritage */
+
 	@Override
 	public String getMessage() {
 		return message;
@@ -30,7 +29,7 @@ public abstract class AbstractApplicationLog implements IApplicationLog {
 	public IApplicationLogListener[] getApplicationLogListeners() {
 		return (IApplicationLogListener[])listeners.toArray();
 	}
-	/** Listener action */
+	
 	protected void fireMessage(String level, String message) {
 		for (IApplicationLogListener listener_i : listeners) {
 			listener_i.newMessage(level, message);

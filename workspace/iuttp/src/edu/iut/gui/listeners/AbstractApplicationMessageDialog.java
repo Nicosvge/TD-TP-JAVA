@@ -7,14 +7,10 @@ public abstract class AbstractApplicationMessageDialog implements
 
 	@Override
 	public void newMessage(String level, String message) {
-		showMessage();
-	}
-	
-	protected abstract void showMessage();
+	 showMessage(level, message);
 
-	protected void showMessage(String level, String message) {
-	
 	}
 	
-	
+	protected abstract void showMessage(String level, String message);
+
 }

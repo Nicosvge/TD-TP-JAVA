@@ -9,11 +9,9 @@ public class ApplicationErrorLog extends AbstractApplicationLog {
 	@Override
 	public void setMessage(String message) {
 		this.message = message;
-		super.fireMessage("[ERROR]", this.message);
-		
-		/*for(int i = 0; i < listeners.size(); i++){
-			listeners.get(i).newMessage("[ERROR]",message); 
-		} */
 		ApplicationSession.instance().getGUILogger().severe(this.message);
+		super.fireMessage("[ERROR]", this.message);
 	}
+
+
 }
